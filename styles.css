@@ -146,8 +146,8 @@ span {
 }
 .grid-6 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
   gap: var(--space-6);
 
   width: clamp(90%, 10vw, 100%);
@@ -252,5 +252,14 @@ img {
   .grid-2 {
     grid-template-rows: auto;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: var(--space-6);
+
+    width: clamp(90%, 10vw, 100%);
+    max-width: 1440px;
   }
 }
