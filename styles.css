@@ -215,7 +215,7 @@ span {
 }
 img {
   width: 100%;
-  max-width: 800px;
+  height: auto;
   border-radius: var(--radius-xl);
 }
 .card {
@@ -247,12 +247,19 @@ img {
   transform: translateY(-5px);
   box-shadow: var(--shadow-md);
 }
-
-@media (min-width: 900px) {
-  .grid-2 {
-    grid-template-rows: auto;
+@media (min-width: 700px) {
+  .grid-6 {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: var(--space-6);
+
+    width: clamp(90%, 10vw, 100%);
+    max-width: 1440px;
   }
+  
+}
+@media (min-width: 900px) {
   .grid-6 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -261,5 +268,10 @@ img {
 
     width: clamp(90%, 10vw, 100%);
     max-width: 1440px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
