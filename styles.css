@@ -1,0 +1,84 @@
+:root {
+  /*colors*/
+  --primary-50: #ecf8ff;
+  --primary-100: #d5edff;
+  --primary-200: #b5e1ff;
+  --primary-300: #82d0ff;
+  --primary-400: #47b4ff;
+  --primary-500: #1d91ff;
+  --primary-600: #0570ff;
+  --primary-700: #0058f6;
+  --primary-800: #074dd9;
+  --primary-900: #0c409c;
+  --primary-950: #0d285e;
+
+  /*font-family*/
+  --ff-heading: "Poppins", sans-serif;
+  --ff-body: Poppins;
+
+  /*font-size*/
+  --fs-xs: 12px;
+  --fs-sm: 14px;
+  --fs-base: 16px;
+  --fs-md: 18px;
+  --fs-lg: 20px;
+  --fs-xl: 24px;
+  --fs-2xl: 30px;
+  --fs-3xl: 36px;
+  --fs-4xl: 48px;
+  --fs-5xl: 60px;
+
+  /*font-weight*/
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /*line-height*/
+
+  /*border-radius*/
+  --radius-sm: 2px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
+
+  /*spaces*/
+  --space-05: 2px;
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+  --radius-16: 64px;
+}
+
+.heading-h1 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-5xl);
+  color: var(--primary-800);
+}
+.heading-h2 {
+  font-family: var(--ff-heading);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-4xl);
+  color: var(--primary-800);
+}
+
+.hero__section {
+  display: grid;
+  grid-template-columns: repeat(2, fr);
+  grid-template-rows: 1fr;
+}
+.hero__container {
+  grid-column: 1, 2;
+  display: flex;
+  flex-direction: column;
+}
+.hero__img {
+  grid-column: 2, 3;
+}
