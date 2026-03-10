@@ -110,9 +110,9 @@ p {
 a,
 li {
   font-size: clamp(var(--fs-xl), 20vw, var(--fs-base));
-  font-weight: var(--fw-semibold);
+  font-weight: var(--fw-medium);
   font-family: var(--ff-body);
-  color: var(--neutral-700);
+  color: var(--neutral-500);
 }
 
 li {
@@ -204,7 +204,7 @@ span {
 }
 .content__hero__img img {
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
 }
 .primary__button {
   display: inline-block;
