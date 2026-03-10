@@ -140,6 +140,35 @@ span {
   color: var(--neutral-50);
 }
 /*components*/
+header {
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ padding-top: var(--space-3);
+ padding-bottom: var(--space-3);
+ background-color: var(--neutral-50);
+ position:fixed;
+ transform: translateY(-100px);
+ z-index: 9999;
+}
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  height: 50px;
+}
+
 .grid-2 {
   display: grid;
   grid-template-rows: repeat(2, auto);
@@ -295,6 +324,7 @@ img {
     width: clamp(90%, 10vw, 100%);
   }
 }
+
 @media (min-width: 1000px) {
   .grid-6 {
     display: grid;
