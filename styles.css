@@ -130,7 +130,12 @@ li {
   padding: 10px;
 
 }
-
+label {
+  font-size: clamp(var(--fs-xl), 20vw, var(--fs-base));
+  font-weight: var(--fw-medium);
+  font-family: var(--ff-body);
+  color: var(--neutral-500);
+}
 .volante {
   display: flex;
   flex-direction: row;
