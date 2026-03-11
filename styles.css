@@ -102,6 +102,12 @@ h3 {
   font-family: var(--ff-heading);
   color: var(--neutral-700);
 }
+h4 {
+  font-size: clamp(var(--fs-2xl), 4vw, var(--fs-3xl));
+  font-weight: var(--fw-medium);
+  font-family: var(--ff-heading);
+  color: var(--neutral-50);
+}
 p {
   font-size: clamp(var(--fs-xl), 20vw, var(--fs-base));
   font-weight: var(--fw-normal);
@@ -113,6 +119,16 @@ li {
   font-weight: var(--fw-medium);
   font-family: var(--ff-body);
   color: var(--neutral-500);
+}
+.absolute-text {
+  position: absolute; /* El texto se mueve libremente sobre el padre */
+          /* Lo movemos a la derecha a la mitad */
+  transform: translate(0, -150%); /* El truco maestro para centrarlo perfecto */
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para que se lea bien */
+  padding: 10px;
+
 }
 
 li {
@@ -197,6 +213,13 @@ nav {
   width: clamp(90%, 10vw, 100%);
   max-width: 1200px;
 }
+.grid-8 {
+  display: grid;
+    width: clamp(90%, 10vw, 100%);
+    gap: var(--space-6);
+    max-width: 1200px;
+  }
+
 .grid-v-2 {
   display: grid;
   grid-template-rows: repeat(2, auto);
@@ -314,6 +337,7 @@ img {
   box-shadow: var(--shadow-md);
 }
 
+
 @media (min-width: 700px) {
   .grid-6 {
     display: grid;
@@ -322,6 +346,10 @@ img {
     gap: var(--space-6);
 
     width: clamp(90%, 10vw, 100%);
+  }
+
+  .grid-8 {
+  grid-template-columns: repeat(2,1fr);
   }
 }
 
@@ -341,5 +369,12 @@ img {
   }
   .grid-3 {
     grid-template-columns: repeat(3, auto);
+  }
+  .grid-8 {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: var(--space-6);
+    width: clamp(90%, 10vw, 100%);
   }
 }
