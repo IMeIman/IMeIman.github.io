@@ -131,6 +131,17 @@ li {
 
 }
 
+.volante {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+.volante img {
+  max-width: 450px;
+}
+
 li {
   margin-left: var(--space-8);
 }
@@ -365,6 +376,7 @@ img {
   .grid-2 {
     display: grid;
     grid-template-rows: auto;
+
     grid-template-columns: repeat(2, 1fr);
   }
   .grid-3 {
