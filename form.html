@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, 
+    initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+      <div class="header__container">
+        <div class="logo">
+        <img src="assets/Vérticelogo.png" alt="Logotipo">
+      </div>
+      <nav>
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="about.html" class="nav-link">Sobre nosotros</a>
+        <a href="" class="primary__button nav-link">Contacto</a>
+      </nav>
+      </div>
+    </header>
+
+    <div class="card">
+        <h2>ENVÍANOS UN MENSAJE</h2>
+
+            <form class="content" action="https://formsubmit.co/verticestudio.web@gmail.com" method="POST">
+
+            <label>Nombre</label>
+            <input type="text" name="nombre" required>
+
+            <label>Correo electrónico</label>
+            <input type="email" name="email" required>
+
+            <label>Teléfono</label>
+            <input type="tel" name="telefono">
+
+            <label>Tipo de servicio</label>
+            <select name="servicio">
+                <option>Landing Page ($1800)</option>
+                <option>Paquete Intermedio ($2800)</option>
+                <option>Socio Mensual ($899)</option>
+            </select>
+
+            <label>Mensaje</label>
+            <textarea name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" class="primary__button">
+                Enviar mensaje
+            </button>
+            </form>
+        </div>
+</body>
+</html>
