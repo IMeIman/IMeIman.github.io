@@ -8,11 +8,12 @@
   </head>
   <body>
     <header>
-    <div class="header__container">
+  <div class="header__container">
 
     <div class="logo">
       <img src="assets/Vérticelogo.png" alt="Logotipo">
     </div>
+
 
     <div class="menu-toggle" id="menu-toggle">
       <span></span>
@@ -21,13 +22,17 @@
     </div>
 
     <nav id="nav-menu">
+
+      <div class="menu-close" id="menu-close">✕</div>
+
       <a href="index.html" class="nav-link">Inicio</a>
       <a href="about.html" class="nav-link">Sobre nosotros</a>
       <a href="form.html" class="primary__button nav-link">Contacto</a>
+
     </nav>
 
-    </div>
-    </header>
+  </div>
+</header>
     <section class="grid-2">
       <div class="content">
         <h2>NUESTRO EQUIPO DE TRABAJO</h2>
@@ -135,12 +140,19 @@
       </div>
     </section>
     <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navMenu = document.getElementById("nav-menu");
 
-        menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-          });
-    </script>
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+const menuClose = document.getElementById("menu-close");
+
+menuToggle.addEventListener("click", () => {
+navMenu.classList.toggle("active");
+});
+
+menuClose.addEventListener("click", () => {
+navMenu.classList.remove("active");
+});
+
+</script>
   </body>
 </html>
