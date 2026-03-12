@@ -75,12 +75,19 @@
         
     </div>
     <script>
-        const menuToggle = document.getElementById("menu-toggle");
-        const navMenu = document.getElementById("nav-menu");
 
-        menuToggle.addEventListener("click", () => {
-        navMenu.classList.toggle("active");
-          });
-    </script>
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+const menuClose = document.getElementById("menu-close");
+
+menuToggle.addEventListener("click", () => {
+navMenu.classList.toggle("active");
+});
+
+menuClose.addEventListener("click", () => {
+navMenu.classList.remove("active");
+});
+
+</script>
 </body>
 </html>
